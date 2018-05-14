@@ -5,8 +5,13 @@ import ru.innopolis.stc9.correctJDBC.Pojo.Teacher;
 
 import java.sql.SQLException;
 
+
+/** Класс обретка для
+ * методов класса TeacherDAO */
 public class TeacherService {
 TeacherDAO teacherDAO =new TeacherDAO();
+
+/** @see TeacherDAO#addSTeacher(Teacher) */
     public boolean addSTeacherService(Teacher teacher)
     {
         try {
@@ -16,6 +21,7 @@ TeacherDAO teacherDAO =new TeacherDAO();
         }
         return false;
     }
+    /** @see TeacherDAO#getTeacher(int)  */
     public  Teacher getTeacherService(int id)
     {
         try {
@@ -27,6 +33,7 @@ TeacherDAO teacherDAO =new TeacherDAO();
 
         return null;
     }
+    /** @see TeacherDAO#deleteTecher(int)   */
     public  boolean deleteTecher(int id)
     {
         try {

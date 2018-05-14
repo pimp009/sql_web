@@ -1,5 +1,6 @@
 package ru.innopolis.stc9.correctJDBC.Pojo;
 
+/** Класс Предмет*/
 public class Subject {
     private int id;
     private String Name_Subject;

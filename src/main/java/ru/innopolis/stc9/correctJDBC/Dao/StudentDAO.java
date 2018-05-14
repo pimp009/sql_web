@@ -3,16 +3,19 @@ package ru.innopolis.stc9.correctJDBC.Dao;
 
 
 import ru.innopolis.stc9.ConnectionManager.ConnectionManager;
+import org.apache.log4j.Logger;
 import ru.innopolis.stc9.correctJDBC.Pojo.Student;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 
+/** Класс УчительДАО для обработки
+ *  данных обьекта студент в БД */
 public class StudentDAO {
     private static ConnectionManager connectionManager = ConnectionManager.getInstance();
-
+    final static Logger logger = Logger.getLogger(StudentDAO.class);
+    /** Метод добавляющий студента в БД
+     * @param student
+     * */
     public static boolean addStudent(Student student) throws SQLException {
         Connection connection = connectionManager.getConnection();
         PreparedStatement statement = connection.prepareStatement
@@ -23,12 +26,17 @@ public class StudentDAO {
         statement.setString(3, student.getSurName());
         statement.setInt(4, student.getGroup_id());
         int res = statement.executeUpdate();
+        logger.info("The students was added to the DB");
         connection.close();
-        if (res > 0) {
+        if (res >0) {
             return true;
-        } else return false;
+        }  return false;
     }
 
+    /** Метод получающий студента в БД
+     * @param id
+     * @return student
+     * */
     public static Student getStudent(int id) throws SQLException {
         Connection connection = connectionManager.getConnection();
 
@@ -47,7 +55,10 @@ public class StudentDAO {
         connection.close();
         return student;
     }
-
+    /** Метод обновляющий студента в БД
+     * @param student
+     *
+     * */
     public static boolean updateStudent(Student student) throws SQLException {
         Connection connection = connectionManager.getConnection();
         PreparedStatement statement = connection.prepareStatement("UPDATE student SET  " +
@@ -57,6 +68,7 @@ public class StudentDAO {
         statement.setInt(3,student.getGroup_id());
         statement.setInt(4, student.getId());
         int res =statement.executeUpdate();
+        logger.info("The students was updated to the DB");
         connection.close();
         if(res>0)
         {
@@ -64,14 +76,17 @@ public class StudentDAO {
         }
         return false;
     }
-
+    /** Метод удаляющий студента в БД
+     * @param id
+     *
+     * */
     public static boolean deleteStudent(int id) throws SQLException {
         Connection connection = connectionManager.getConnection();
-
         PreparedStatement statement = connection.prepareStatement
                 ("DELETE FROM student WHERE id = ?");
         statement.setInt(1, id);
         int str = statement.executeUpdate();
+        logger.info("The students was deleted to the DB");
         connection.close();
         if (str > 0) {
             return true;
@@ -80,11 +95,15 @@ public class StudentDAO {
         }
 
     }
-
-
-
-
+    public static void main(String[] args) throws SQLException {
+        System.out.println(getStudent(1));
+    }
 }
+
+
+
+
+
 
 
 

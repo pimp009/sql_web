@@ -4,11 +4,13 @@ import ru.innopolis.stc9.correctJDBC.Dao.StudentDAO;
 import ru.innopolis.stc9.correctJDBC.Pojo.Student;
 
 import java.sql.SQLException;
-import java.util.List;
 
+/** Класс обретка для
+ * методов класса StudentDAO */
 public class StudentService {
 StudentDAO studentDAO = new StudentDAO();
 
+    /** @see StudentDAO#addStudent(Student)  */
    public boolean addStudent(Student student)  {
        try {
            studentDAO.addStudent(student);
@@ -18,6 +20,7 @@ StudentDAO studentDAO = new StudentDAO();
        }
        return false;
    }
+    /** @see StudentDAO#getStudent(int)   */
     public  Student getStudentById(int id)
     {
         try {
@@ -27,6 +30,7 @@ StudentDAO studentDAO = new StudentDAO();
         }
         return null;
     }
+    /** @see StudentDAO#updateStudent(Student) */
     public  boolean updateStudentService(Student student)
     {
         try {
@@ -37,6 +41,7 @@ StudentDAO studentDAO = new StudentDAO();
 
         return false;
     }
+    /** @see StudentDAO#deleteStudent(int)  */
     public  boolean deleteStudent(int id){
         try {
             studentDAO.deleteStudent(id);
@@ -44,5 +49,9 @@ StudentDAO studentDAO = new StudentDAO();
             e.printStackTrace();
         }
         return false;
+    }
+    public static void main(String[] args) throws SQLException {
+        StudentService service =new StudentService();
+        System.out.println(service.getStudentById(1));
     }
 }

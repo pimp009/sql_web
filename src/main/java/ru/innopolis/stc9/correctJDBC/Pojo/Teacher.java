@@ -1,5 +1,9 @@
 package ru.innopolis.stc9.correctJDBC.Pojo;
 
+
+import java.util.Objects;
+
+/** Класс преподователь*/
 public class Teacher {
     private int id;
     private String Name_Teacher;
@@ -33,6 +37,22 @@ public class Teacher {
 
     public void setSurName_Teacher(String surName_Teacher) {
         SurName_Teacher = surName_Teacher;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Teacher)) return false;
+        Teacher teacher = (Teacher) o;
+        return getId() == teacher.getId() &&
+                Objects.equals(getName_Teacher(), teacher.getName_Teacher()) &&
+                Objects.equals(getSurName_Teacher(), teacher.getSurName_Teacher());
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(getId(), getName_Teacher(), getSurName_Teacher());
     }
 
     public String toString() {

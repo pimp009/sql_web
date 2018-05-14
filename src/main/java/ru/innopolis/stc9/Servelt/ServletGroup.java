@@ -1,9 +1,10 @@
 package ru.innopolis.stc9.Servelt;
 
-import com.sun.org.apache.xerces.internal.impl.io.UTF8Reader;
+import ru.innopolis.stc9.correctJDBC.Pojo.Group;
 import ru.innopolis.stc9.correctJDBC.Pojo.Student;
 import ru.innopolis.stc9.sevices.GroupService;
 
+import javax.script.ScriptContext;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -12,22 +13,26 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class ServletGroup extends HttpServlet {
-    private GroupService groupService = new GroupService();
+    final public GroupService groupService = new GroupService();
 
+    /**
+     * Метод формирующий запрос в БД
+     * Получение сведений остудентах определенной группы
+     */
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+    public void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
         String namegroup = req.getParameter("namegroup");
-
+        ArrayList<Student> group = null;
         if (namegroup != null) {
-            ArrayList<Student> group = groupService.getStudentfromGroup(Integer.parseInt(namegroup));
+             group = groupService.getStudentfromGroup(Integer.parseInt(namegroup));
             for (Student student : group) {
                 resp.setContentType("text/html;charset=utf-8");
-                resp.getWriter().println(student.getId() + " " + student.getName()+ " "
-                        + student.getSurName()+ " " );
+                resp.getWriter().write(student.toString()+"\n");
+
 
             }
-        } else {
+        } if (group.isEmpty()){
             resp.getWriter().println("Nothing");
         }
 

@@ -1,5 +1,6 @@
 package ru.innopolis.stc9.correctJDBC.Pojo;
 
+/** Класс студент*/
 public class Student {
     private int id;
     private String Name;
@@ -11,7 +12,7 @@ public class Student {
         this.id = id;
         Name = name;
         SurName = surName;
-        this.group = group;
+
     }
 
     public Student(int id, String name, String surName, int group_id) {
