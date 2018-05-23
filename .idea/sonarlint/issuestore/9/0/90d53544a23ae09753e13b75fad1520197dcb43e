@@ -1,8 +1,8 @@
 
-<squid:S1989"'Add a "try/catch" block for "parseInt".(†“å
-usquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ã¼£Åøÿÿÿÿ
-Bsquid:S1989"(Add a "try/catch" block for "getWriter".(ôÎ‘¸úÿÿÿÿ
-tsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(Šåéîùÿÿÿÿ8¿•×îµ,
-jsquid:UselessImportCheck"CRemove this unused import 'ru.innopolis.stc9.sevices.GroupService'.(ÊžÄŠùÿÿÿÿ
-Bsquid:S1989"(Add a "try/catch" block for "getWriter".(¦‚…öÿÿÿÿÿ
-Rsquid:UselessImportCheck"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ
+tsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(Šåéîùÿÿÿÿ8ñ¸èïµ,
+Csquid:S1989"'Add a "try/catch" block for "parseInt".(†“å8ñ¸èïµ,
+Isquid:S1989"(Add a "try/catch" block for "getWriter".(¦‚…öÿÿÿÿÿ8ñ¸èïµ,
+Isquid:S1989"(Add a "try/catch" block for "getWriter".(ôÎ‘¸úÿÿÿÿ8ñ¸èïµ,
+|squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ã¼£Åøÿÿÿÿ8ñ¸èïµ,
+qsquid:UselessImportCheck"CRemove this unused import 'ru.innopolis.stc9.sevices.GroupService'.(ÊžÄŠùÿÿÿÿ8ñ¸èïµ,
+Ysquid:UselessImportCheck"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8ñ¸èïµ,

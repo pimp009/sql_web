@@ -1,10 +1,10 @@
 
-Bsquid:S1989"(Add a "try/catch" block for "getWriter".(ôÎ‘¸úÿÿÿÿ
-gsquid:UselessImportCheck"ERemove this unused import 'ru.innopolis.stc9.correctJDBC.Pojo.Group'.(Í¸ü•
-Qsquid:S3972"7Move this "if" to a new line or add the missing "else".(ºÍïøÿÿÿÿ
-Bsquid:S1989"(Add a "try/catch" block for "getWriter".(¦‚…öÿÿÿÿÿ
-^squid:UselessImportCheck"7Remove this unused import 'javax.script.ScriptContext'.(íˆêëùÿÿÿÿ
-<squid:S1989"'Add a "try/catch" block for "parseInt".(º¢”Ş
-usquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ã¼£Åøÿÿÿÿ
-]squid:S2259"CA "NullPointerException" could be thrown; "group" is nullable here.(ºÍïøÿÿÿÿ
-tsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(ìì¬²úÿÿÿÿ8æ‰İîµ,
+tsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(ìì¬²úÿÿÿÿ8ò¸èïµ,
+Csquid:S1989"'Add a "try/catch" block for "parseInt".(º¢”Ş8ò¸èïµ,
+Isquid:S1989"(Add a "try/catch" block for "getWriter".(¦‚…öÿÿÿÿÿ8ò¸èïµ,
+Isquid:S1989"(Add a "try/catch" block for "getWriter".(ôÎ‘¸úÿÿÿÿ8ò¸èïµ,
+Xsquid:S3972"7Move this "if" to a new line or add the missing "else".(ºÍïøÿÿÿÿ8ò¸èïµ,
+dsquid:S2259"CA "NullPointerException" could be thrown; "group" is nullable here.(ºÍïøÿÿÿÿ8ò¸èïµ,
+|squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ã¼£Åøÿÿÿÿ8ò¸èïµ,
+nsquid:UselessImportCheck"ERemove this unused import 'ru.innopolis.stc9.correctJDBC.Pojo.Group'.(Í¸ü•8ò¸èïµ,
+esquid:UselessImportCheck"7Remove this unused import 'javax.script.ScriptContext'.(íˆêëùÿÿÿÿ8ò¸èïµ,

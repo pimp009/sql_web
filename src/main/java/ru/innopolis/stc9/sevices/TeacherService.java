@@ -14,11 +14,7 @@ TeacherDAO teacherDAO =new TeacherDAO();
 /** @see TeacherDAO#addSTeacher(Teacher) */
     public boolean addSTeacherService(Teacher teacher)
     {
-        try {
-            teacherDAO.addSTeacher(teacher);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+        teacherDAO.addSTeacher(teacher);
         return false;
     }
     /** @see TeacherDAO#getTeacher(int)  */

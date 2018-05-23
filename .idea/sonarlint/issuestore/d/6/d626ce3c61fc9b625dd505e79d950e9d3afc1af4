@@ -1,13 +1,13 @@
 
-^squid:S2095G"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(„‡–
-^squid:S2095/"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(„‡–
-†squid:S1319?"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ÓËŒZ
-]squid:S1126["AReplace this if-then-else statement by a single return statement.(æ©Ñ¯ùÿÿÿÿ
-fsquid:S2095B"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Ş‡ö¼
-ksquid:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Ï¿øÿÿÿÿ
-ksquid:S2095U"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Ï¿øÿÿÿÿ
 jsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(ùóşğ
-fsquid:S2095-"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(†ÉÖ
-rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Œâ’ß
-Xsquid:S1126"AReplace this if-then-else statement by a single return statement.(İÜŒø
 Wsquid:S1118":Add a private constructor to hide the implicit public one.(”Ë¤8ÄÌÑîµ,
+†squid:S1319?"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ÓËŒZ
+rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Œâ’ß
+ksquid:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Ï¿øÿÿÿÿ
+]squid:S1126["AReplace this if-then-else statement by a single return statement.(æ©Ñ¯ùÿÿÿÿ
+^squid:S2095/"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(„‡–
+fsquid:S2095-"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(†ÉÖ
+^squid:S2095G"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(„‡–
+ksquid:S2095U"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Ï¿øÿÿÿÿ
+Xsquid:S1126"AReplace this if-then-else statement by a single return statement.(İÜŒø
+fsquid:S2095B"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Ş‡ö¼

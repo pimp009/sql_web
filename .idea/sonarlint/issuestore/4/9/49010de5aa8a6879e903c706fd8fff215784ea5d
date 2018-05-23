@@ -1,11 +1,11 @@
 
-fsquid:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(›Œ¹º
-fsquid:S2095F"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ôó„Ç
-^squid:S2095K"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(„‡–
-osquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(şŠÂÒÿÿÿÿÿ
-Œsquid:S1319C"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ºŒÄıÿÿÿÿ
-]squid:S1126#"AReplace this if-then-else statement by a single return statement.(³‘èªüÿÿÿÿ
 fsquid:S2095,"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(–°Ûæ
-rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Œâ’ß
+Œsquid:S1319C"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ºŒÄıÿÿÿÿ
 ]squid:S11266"AReplace this if-then-else statement by a single return statement.(³‘èªüÿÿÿÿ
+rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Œâ’ß
+osquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(şŠÂÒÿÿÿÿÿ
+fsquid:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(›Œ¹º
+]squid:S1126#"AReplace this if-then-else statement by a single return statement.(³‘èªüÿÿÿÿ
+^squid:S2095K"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(„‡–
 ]squid:S1118":Add a private constructor to hide the implicit public one.(²äëşÿÿÿÿ8ïÒÒîµ,
+fsquid:S2095F"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ôó„Ç

@@ -5,6 +5,7 @@ package ru.innopolis.stc9.Servelt;
 import ru.innopolis.stc9.correctJDBC.Pojo.Dairy;
 import ru.innopolis.stc9.sevices.DairyService;
 
+import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -17,8 +18,8 @@ public class ServeletDairy extends HttpServlet {
     /** Метод формирующий запрос в БД
      * Получение сведений об оценках студента за определенный предмет*/
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
+        req.getRequestDispatcher("/studentsdairy.jsp").forward(req, resp);
         String id = req.getParameter("id");
         String subject_id = req.getParameter("subject_id");
         if (id != null && subject_id != null) {
