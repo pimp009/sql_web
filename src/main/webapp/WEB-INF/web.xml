@@ -21,6 +21,14 @@
         <servlet-name>student</servlet-name>
         <url-pattern>/student</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>group</servlet-name>
+        <servlet-class>ru.innopolis.stc9.Servelt.ServletGroup</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>group</servlet-name>
+        <url-pattern>/group</url-pattern>
+    </servlet-mapping>
 
 </web-app>
 

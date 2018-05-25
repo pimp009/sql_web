@@ -24,7 +24,7 @@ public class ServletStudent extends HttpServlet {
     @Override
     public void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
-        req.getRequestDispatcher("/studentsgroup.jsp").forward(req, resp);
+        //req.getRequestDispatcher("/studentsgroup.jsp").forward(req, resp);
         String id = req.getParameter("id");
         Student student = null;
         if (id != null) {

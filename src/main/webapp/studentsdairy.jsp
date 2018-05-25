@@ -10,8 +10,8 @@
 <head>
     <title>Dairy</title>
 </head>
-<body>
-<form action="servletdairy">
+<body>i
+<form acton="servletdairy">
 Введите id студента<input type="text" name="id">
     Введите id предмета<input type="text" name="subject_id">
     <input type="submit" value="Отправить">

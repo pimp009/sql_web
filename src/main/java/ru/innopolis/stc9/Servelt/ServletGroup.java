@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
-@WebServlet("/group")
+
 public class ServletGroup extends HttpServlet {
     final public GroupService groupService = new GroupService();
 
@@ -26,26 +26,14 @@ public class ServletGroup extends HttpServlet {
     public void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
 
-    req.getRequestDispatcher("/studentsgroup.jsp").forward(req, resp);
+       req.getRequestDispatcher("/studentsgroup.jsp").forward(req, resp);
         String namegroup = req.getParameter("group");
         ArrayList<Student> group = null;
-        if (namegroup != null) {
-            group = groupService.getStudentfromGroup(Integer.parseInt(namegroup));
-            for (Student student : group) {
-                resp.setContentType("text/html;charset=utf-8");
-                resp.getWriter().println(student.toString());
-                PrintWriter pr = resp.getWriter();
-                pr.println("dhdhfdd");
-
-
-
-
-
-            }
-        }
-        //if (group.isEmpty()) {
-          //  resp.getWriter().println("Nothing");
-       // }
+                if (namegroup != null)
+                {groupService.getStudentfromGroup(Integer.parseInt(namegroup));}
+        req.setAttribute("group", group);
+        req.getRequestDispatcher("/viewstudent.jsp").forward(req, resp);
 
     }
 }
+

@@ -12,9 +12,10 @@
 </head>
 <body>
 
-<form action="${pageContext.request.contextPath}student" method="get">
+<form method="get" action="${pageContext.request.contextPath}/group">
     Введите id группы<input type="text" name="id">
     <input type="submit" value="Отправить">
+
 </form>
 </body>
 </html>
